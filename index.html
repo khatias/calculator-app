@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="shortcut icon" href="asset/favicon-32x32.png" type="image/x-icon">
+    <script src="app.js" defer></script>
+    <title>Calculator-app</title>
+</head>
+<body>
+<header>
+    <h1 class="theme-text-color">calc</h1>
+    <div class="theme-div">
+    <p class="theme-text-color title">THEME</p>
+    <div class="theme-container">
+        <div class="switch-numbers">
+            <p class="theme-text-color">1</p>
+            <p class="theme-text-color">2</p>
+            <p class="theme-text-color">3</p>
+        </div>
+        <div class="switch">
+            <div class="switch-radios">
+                <input type="radio" name="theme-type" value="one" id="first">
+                <input type="radio" name="theme-type" value="two" id="second">
+                <input type="radio" name="theme-type" value="three" id="third">
+            </div>
+        <div class="ball"></div>
+        </div>
+    </div>
+</div>
+</header>
+
+    <input class="sum-container theme-text-color"    type="text"  id = 'result' placeholder="0"  >
+
+<main>
+    <div class="calculator-keys">
+        <input class="keys" type="button" value="7" onclick="Solve('7')">
+        <input class="keys"  type="button" value="8" onclick="Solve('8')">
+        <input class="keys" type="button" value="9" onclick="Solve('9')">
+        <input  class="delete" type="button" value="DEL" onclick="Delete()">
+
+        <input class="keys" type="button" value="4" onclick="Solve('4')">
+        <input class="keys" type="button" value="5" onclick="Solve('5')">
+        <input class="keys" type="button" value="6" onclick="Solve('6')">
+        <input class="keys" type="button" value="+" onclick="Solve('+')">
+
+        <input class="keys"  type="button" value="1" onclick="Solve('1')">
+        <input class="keys"  type="button" value="2" onclick="Solve('2')">
+        <input class="keys"  type="button" value="3" onclick="Solve('3')">
+        <input class="keys"  type="button" value="-" onclick="Solve('-')">
+
+        <input class="keys"  type="button" value="." onclick="Solve('.')">
+        <input class="keys"  type="button" value="0" onclick="Solve('0')">
+        <input class="keys"  type="button" value="/" onclick="Solve('/')">
+        <input class="keys"  type="button" value="x" onclick="Solve('*')">
+        
+        <input class="reset" type="button" value="RESET" onclick="Reset()">
+        <input class="equal" type="button" value="=" onclick="Result()">
+    
+
+    </div>
+</main>
+</body>
+</html>
+
+
+
+
